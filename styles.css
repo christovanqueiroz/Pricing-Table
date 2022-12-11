@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom,
+        #1D539E 0%,
+        #1D539E 50%,
+        #FFFFFF 50%,
+        #FFFFFF 100%
+    )
+}
+
+header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    max-width: 35vw;
+    text-align: center;
+    row-gap: 1em;
+    color: #FFFFFF;
+}
+
+header div h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.free,
+.basic,
+.pro {
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    height: 22em;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(142,150,185,0.25);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(142,150,185,0.25);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(142,150,185,0.25);
+}
+
+.planTitle {
+    padding: 1.35em 1.35em 0 1.35em;
+    color: #1E2338;
+}
+
+.planPrice {
+    padding: 1.35em 1.35em 0 1.35em;
+    color: #1E2338;
+}
+
+.planPrice span {
+    font-weight: 400;
+    color: #828799;
+    font-size: 0.8em;
+}
+
+.planInfo {
+    padding: 1.35em 0 1.35em 0.5em;
+    margin: 0 1.35em 0 1.35em;
+    color: #828799;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 0.75em
+}
+
+.planContent {
+    padding: 1.35em 0 1.35em 0.5em;
+    list-style: none;
+    color: #828799;
+    font-weight: 600;
+    font-size: 0.75em;
+    margin: 0 1.35em 0 1.35em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.85em;
+}
+
+.planContent li {
+    display:flex;
+}
+
+.planContent img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+}
+
+.planButton {
+    padding: 0 1.35em 0 1.35em;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+}
+
+.planButton button {
+    width: 100%;
+}
