@@ -11,6 +11,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
     </style>
+
+    <script src="./scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,7 +23,7 @@
     </header>
 
     <section>
-        <div class="free">
+        <div class="free" onmouseover="selectFreePlan()" onmouseout="unselectFreePlan()">
             <div class="planTitle">
                 <span>Grátis</span>
             </div>
@@ -53,7 +55,7 @@
             </div>
         </div>
 
-        <div class="basic">
+        <div class="basic" onmouseover="selectBasicPlan()" onmouseout="unselectBasicPlan()">
             <div class="planTitle">
                 <span>Básico</span>
             </div>
@@ -90,7 +92,7 @@
             </div>
         </div>
 
-        <div class="pro">
+        <div class="pro" onmouseover="selectProPlan()" onmouseout="unselectProPlan()">
             <div class="planTitle">
                 <span>Profissional</span>
             </div>

@@ -123,5 +123,24 @@ section {
     height: 100%;
     border-radius: 10px;
     border: 1px solid #1D539E;
-    background-color: #FFFFFF;
+    background-color: none;
+}
+
+.selected {
+    background-color: #1D539E;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.planSelect {
+    transform: scale(1.05);
+    transition: all .5s;
+}
+
+.planTitleSelect {
+    color: #1D539E;
+    background-color: #FFCC29;
+    padding-bottom: 1em;
+    border-radius: 8px 8px 0 0;
+    font-weight: 700;
 }
